@@ -1,0 +1,49 @@
+main: cn.eggpixel.EmeraldTools
+name: EmeraldTools
+version: 1.0.0
+author: EmeraldsEgg
+api-version: 1.13
+
+commands:
+  kills:
+    usage: '§cUsage: /kills'
+    description: Kill yourself.
+    permission: emeraldtools.kills
+    permission-message: '§cYou do not have permission to do this!'
+  kill:
+    usage: '§cUsage: /kill [Player] or /kill [Entity UUID]'
+    description: Kill a player or a entity.
+    permission: emeraldtools.kill
+    permission-message: '§cYou do not have permission to do this!'
+  fly:
+    usage: '§cUsage: /fly or /fly [Player]'
+    description: Make a player can fly.
+    permission: emeraldtools.fly
+    permission-message: '§cYou do not have permission to do this!'
+  vanish:
+    usage: '§cUsage: /v or /v [Player]'
+    description: Vanish a player.
+    permission: emeraldtools.vanish
+    permission-message: '§cYou do not have permission to do this!'
+    aliases: [v]
+permissions:
+  emeraldtools.admin:
+    description: 'Plugin Management Permission'
+    default: op
+    children:
+      emeraldtools.kills: true
+      emeraldtools.kill: true
+      emeraldtools.fly: true
+      emeraldtools.vanish: true
+  emeraldtools.kills:
+    default: true
+  emeraldtools.kill:
+    default: op
+  emeraldtools.fly:
+    default: op
+  emeraldtools.vanish.see:
+    default: op
+  emeraldtools.vanish:
+    default: op
+    children:
+      emeraldtools.vanish.see: true

@@ -1,0 +1,7 @@
+#There are a variable.
+#%PLAYERNAME%: YOU CAN GET PLAYER NAME
+DO_IN_CONSOLE: "§a[EmeraldsTools] §c§lYou cannot perform this operation in the console!"
+KILL_ENTITY_NOT_FOUND: "§a[EmeraldsTools] §cPlayer not found!"
+KILL_SUCCESSFUL: "§a[EmeraldsTools] §aSuccessfully killed %PLAYERNAME%!"
+LOGIN_CHAT: "§a[EmeraldsTools] Hello %PLAYERNAME% !Welcome to this Server!You must say .emeraldegg before you interact!Thank you!"
+LOGIN_SUCCESSFUL: "§a[EmeraldsTools] §lYou have completed the verification,please enjoy yourself!"
