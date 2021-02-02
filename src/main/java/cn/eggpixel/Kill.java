@@ -1,13 +1,12 @@
 package cn.eggpixel;
 
+import cn.eggpixel.api.getMessages;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-
 import java.util.UUID;
 
 public class Kill implements CommandExecutor {
@@ -24,6 +23,7 @@ public class Kill implements CommandExecutor {
                 Player player = Bukkit.getPlayerExact(args[0]);
                 assert player != null;
                 player.setHealth(0.00);
+                sender.sendMessage(new getMessages().KILL_SUCCESSFUL.replace("%PLAYERNAME%", player.getName()));
                 return true;
             } catch (Exception e) {
                 try {
@@ -40,7 +40,7 @@ public class Kill implements CommandExecutor {
                         entity.remove();
                         return true;
                     } catch (Exception a) {
-                        sender.sendMessage(ChatColor.RED + "实体不存在!");
+                        sender.sendMessage(new getMessages().PLAYER_NOT_FOUND);
                         return true;
                     }
                 }

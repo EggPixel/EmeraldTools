@@ -1,5 +1,6 @@
 package cn.eggpixel;
 
+import cn.eggpixel.api.getMessages;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -25,10 +26,10 @@ public class Fly implements CommandExecutor {
                     assert player != null;
                     if (player.isFlying()) {
                         player.setAllowFlight(false);
-                        sender.sendMessage(ChatColor.GREEN + "已将" + args[0] + "的飞行状态设置为" + ChatColor.YELLOW + "关闭");
+                        sender.sendMessage(new getMessages().FLY_OFF.replace("%PLAYERNAME%", player.getName()));
                     } else {
                         player.setAllowFlight(true);
-                        sender.sendMessage(ChatColor.GREEN + "已将" + args[0] + "的飞行状态设置为" + ChatColor.YELLOW + "开启");
+                        sender.sendMessage(new getMessages().FLY_ON.replace("%PLAYERNAME%", player.getName()));
                     }
                     return true;
                 } catch (Exception a) {
@@ -36,10 +37,10 @@ public class Fly implements CommandExecutor {
                     assert player != null;
                     if (player.isFlying()) {
                         player.setAllowFlight(false);
-                        sender.sendMessage(ChatColor.GREEN + "已将玩家的飞行状态设置为" + ChatColor.YELLOW + "关闭");
+                        sender.sendMessage(new getMessages().FLY_OFF.replace("%PLAYERNAME%", player.getName()));
                     } else {
                         player.setAllowFlight(true);
-                        sender.sendMessage(ChatColor.GREEN + "已将玩家的飞行状态设置为" + ChatColor.YELLOW + "开启");
+                        sender.sendMessage(new getMessages().FLY_ON.replace("%PLAYERNAME%", player.getName()));
                     }
                     return true;
                 }
@@ -50,10 +51,10 @@ public class Fly implements CommandExecutor {
                             Player player = (Player) sender;
                             if (player.isFlying()) {
                                 player.setAllowFlight(false);
-                                sender.sendMessage(ChatColor.GREEN + "已将" + sender.getName() + "的飞行状态设置为" + ChatColor.YELLOW + "关闭");
+                                sender.sendMessage(new getMessages().FLY_OFF.replace("%PLAYERNAME%", player.getName()));
                             } else {
                                 player.setAllowFlight(true);
-                                sender.sendMessage(ChatColor.GREEN + "已将" + sender.getName() + "的飞行状态设置为" + ChatColor.YELLOW + "开启");
+                                sender.sendMessage(new getMessages().FLY_ON.replace("%PLAYERNAME%", player.getName()));
                             }
                             return true;
                         }
@@ -63,13 +64,13 @@ public class Fly implements CommandExecutor {
                         return true;
                     }
                 } else {
-                    sender.sendMessage("§c[EmeraldTools]此命令无法在控制台执行!");
+                    sender.sendMessage(new getMessages().DO_IN_CONSOLE);
                     return true;
                 }
             }
             return false;
         } catch (Exception e){
-            sender.sendMessage("§c[EmeraldTools] 玩家获取失败!");
+            sender.sendMessage(new getMessages().PLAYER_NOT_FOUND);
             return true;
         }
     }

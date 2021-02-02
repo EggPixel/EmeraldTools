@@ -1,7 +1,12 @@
 #There are a variable.
 #%PLAYERNAME%: YOU CAN GET PLAYER NAME
-DO_IN_CONSOLE: "§a[EmeraldsTools] §c§lYou cannot perform this operation in the console!"
-KILL_ENTITY_NOT_FOUND: "§a[EmeraldsTools] §cPlayer not found!"
-KILL_SUCCESSFUL: "§a[EmeraldsTools] §aSuccessfully killed %PLAYERNAME%!"
-LOGIN_CHAT: "§a[EmeraldsTools] Hello %PLAYERNAME% !Welcome to this Server!You must say .emeraldegg before you interact!Thank you!"
-LOGIN_SUCCESSFUL: "§a[EmeraldsTools] §lYou have completed the verification,please enjoy yourself!"
+DO_IN_CONSOLE: "§a[EmeraldTools] §c§lYou cannot perform this operation in the console!"
+PLAYER_NOT_FOUND: "§a[EmeraldTools] §cPlayer not found!"
+KILL_SUCCESSFUL: "§a[EmeraldTools] §aSuccessfully killed %PLAYERNAME%!"
+LOGIN_CHAT: "§a[EmeraldTools] Hello %PLAYERNAME% !Welcome to this Server!You must say .emeraldegg before you interact!Thank you!"
+LOGIN_SUCCESSFUL: "§a[EmeraldTools] §lYou have completed the verification,please enjoy yourself!"
+VANISH_ON: "§a[EmeraldTools] You are invisible now!"
+VANISH_OFF: "§a[EmeraldTools] You are not invisible now!"
+FLY_ON: "§a[EmeraldTools] %PLAYERNAME% are fly now."
+FLY_OFF: "§a[EmeraldTools] %PLAYERNAME% are not fly now."
+BURN_PLAYER: "§a[EmeraldTools] %PLAYERNAME%burned."

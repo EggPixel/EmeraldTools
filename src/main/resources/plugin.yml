@@ -26,6 +26,21 @@ commands:
     permission: emeraldtools.vanish
     permission-message: '§cYou do not have permission to do this!'
     aliases: [v]
+  heal:
+    usage: '§cUsage: /heal or /heal [Player]'
+    description: Heal a player.
+    permission: emeraldtools.heal
+    permission-message: '§cYou do not have permission to do this!'
+  emeraldtools:
+    usage: '§cUsage: /emeraldtools reload'
+    description: Reload the plugin.
+    permission: emeraldtools.admin
+    permission-message: '§cYou do not have permission to do this!'
+  burn:
+    usage: '§cUsage: /burn <Player> [Tick]'
+    description: Make a player burning
+    permission: emeraldtools.burn
+    permission-message: '§cYou do not have permission to do this!'
 permissions:
   emeraldtools.admin:
     description: 'Plugin Management Permission'
@@ -35,6 +50,12 @@ permissions:
       emeraldtools.kill: true
       emeraldtools.fly: true
       emeraldtools.vanish: true
+      emeraldtools.heal: true
+      emeraldtools.burn: true
+  emeraldtools.vanish:
+    default: op
+    children:
+      emeraldtools.vanish.see: true
   emeraldtools.kills:
     default: true
   emeraldtools.kill:
@@ -43,7 +64,7 @@ permissions:
     default: op
   emeraldtools.vanish.see:
     default: op
-  emeraldtools.vanish:
+  emeraldtools.heal:
     default: op
-    children:
-      emeraldtools.vanish.see: true
+  emeraldtools.burn:
+    default: op

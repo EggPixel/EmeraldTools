@@ -1,10 +1,12 @@
 package cn.eggpixel;
 
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import cn.eggpixel.api.getMessages;
+
 
 public class Kills implements CommandExecutor {
     private final EmeraldTools plugin;
@@ -18,7 +20,7 @@ public class Kills implements CommandExecutor {
             Player player = (Player) sender;
             player.setHealth(0.00);
         } else {
-            sender.sendMessage(ChatColor.RED + "[EmeraldsTools] 此命令不能在控制台执行!");
+            sender.sendMessage(new getMessages().DO_IN_CONSOLE);
         }
         return true;
     }
