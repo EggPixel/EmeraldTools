@@ -1,4 +1,4 @@
-package cn.eggpixel.api;
+package cn.eggpixel.API;
 
 import cn.eggpixel.EmeraldTools;
 import org.bukkit.configuration.file.YamlConfiguration;

@@ -1,11 +1,12 @@
-package cn.eggpixel;
+package cn.eggpixel.Command;
 
+import cn.eggpixel.EmeraldTools;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import cn.eggpixel.api.getMessages;
+import cn.eggpixel.API.getMessages;
 
 
 public class Kills implements CommandExecutor {

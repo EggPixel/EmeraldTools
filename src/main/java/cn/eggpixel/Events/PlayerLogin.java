@@ -1,6 +1,6 @@
-package cn.eggpixel;
+package cn.eggpixel.Events;
 
-import cn.eggpixel.api.getMessages;
+import cn.eggpixel.API.getMessages;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

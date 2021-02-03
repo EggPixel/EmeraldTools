@@ -1,6 +1,7 @@
-package cn.eggpixel;
+package cn.eggpixel.Command;
 
-import cn.eggpixel.api.getMessages;
+import cn.eggpixel.EmeraldTools;
+import cn.eggpixel.API.getMessages;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,4 +1,4 @@
-package cn.eggpixel.api;
+package cn.eggpixel.API;
 
 import java.util.ArrayList;
 import java.util.List;
